@@ -13,6 +13,9 @@
 <p>
 <p align="center">
 	<!-- default option, no dependency badges. -->
+	Link to Preprocessing and UI RePO --> https://github.com/samthakur587/vectra_pipeline
+	Link to Agent based Lesson and Quiz Generation API --> http://146.148.47.251:7002/docs
+	Link to Preprocessing Yotube Video APIs --> http://146.148.47.251:8000/docs 
 </p>
 
 <br><!-- TABLE OF CONTENTS -->
