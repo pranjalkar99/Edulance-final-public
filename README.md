@@ -3,7 +3,7 @@
     <h1 align="center">EDULANCE</h1>
 </p>
 <p align="center">
-    <em>OCR & AI Learn Together or Transform Docs into Interactive Learning" could be engaging slogans for the Edulance project while encapsulating its purpose (applying optical character recognition and AI to documents) and value proposition (generating lessons and quizzes based on the content).</em>
+    <em>Transform your Education journey with Edulance</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/bhaswata08/Edulance?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
@@ -36,7 +36,12 @@
 
 ##  Overview
 
-Edulance is an open-source project that utilizes advanced technologies such as OCR, machine learning models, and APIs to transform text documents and PDFs into interactive educational resources. The software accepts user-uploaded files, applies optical character recognition (OCR) for text documents, or extracts valuable content from PDFs. It then generates lessons, quizzes, and lesson plans based on the content using its Lesson Graph model and agents like LessonGenerator, LessonPlanner, OCRAgent, PdfAgent, QuizAgent, and TogetherLLM. Edulance provides an immersive learning experience, enabling effective teaching and interactive knowledge acquisition.
+Edulance is an open-source project that utilizes advanced technologies such as Unstructured, machine learning models, and APIs to transform text documents and PDFs into interactive educational resources. The software accepts user-uploaded files, applies optical character recognition (OCR) for text documents, or extracts valuable content from PDFs. It then generates lessons, quizzes, and lesson plans based on the content using its Lesson Graph model and agents like LessonGenerator, LessonPlanner, OCRAgent, PdfAgent, QuizAgent, and TogetherLLM. Edulance provides an immersive learning experience, enabling effective teaching and interactive knowledge acquisition.
+
+Overall this project incorporates the following:
+1. TogetherAI's LLM Models
+2. Unstructured Partition pdf for making PDFs LLM Ready
+3. Agentic AI with state management.
 
 ---
 
