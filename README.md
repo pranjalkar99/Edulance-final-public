@@ -6,7 +6,7 @@
     <em>Transform your Education journey with Edulance</em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/bhaswata08/Edulance?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="license">
 	<img src="https://img.shields.io/github/last-commit/bhaswata08/Edulance?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/bhaswata08/Edulance?style=default&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/bhaswata08/Edulance?style=default&color=0080ff" alt="repo-language-count">
