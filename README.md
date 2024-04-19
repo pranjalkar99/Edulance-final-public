@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" alt="project-logo">
-</p>
+![Edulance](https://github.com/bhaswata08/Edulance/assets/106006087/33db5a20-3ebd-46c6-b5d5-b48f860798d3)
 <p align="center">
     <h1 align="center">EDULANCE</h1>
 </p>
@@ -42,19 +40,18 @@ Edulance is an open-source project that utilizes advanced technologies such as O
 
 ---
 
+
 ##  Features
 
 |    |   Feature         | Description |
 |----|-------------------|---------------------------------------------------------------|
-| ⚙️  | **Architecture**  | Edulance is a Python-based project using FastAPI as the web framework and Uvicorn for runtime serving. The application leverages containers with Docker for deployment, installing required dependencies from `requirements.txt`. It utilizes libraries like LangChain, PikePDF, PyTesseract for OCR, and OpenAI's LLM models. |
+| ⚙️  | **Architecture**  | Edulance is a Python-based project using FastAPI as the web framework and Uvicorn for runtime serving. The application leverages containers with Docker for deployment, installing required dependencies from `requirements.txt`. It utilizes libraries like LangChain, PikePDF, PyTesseract for OCR, and TogetherAI's LLM models. |
 | 🔩 | **Code Quality**  | The codebase follows a modular structure with clearly defined agents and graph files, ensuring high cohesion and low coupling. Python style guides are followed consistently, including PEP8 and PEP534. There is adequate usage of comments throughout the codebase. |
 | 📄 | **Documentation** | Comprehensive documentation exists for each file and agent. The `README.md` provides a high-level overview and installation instructions, while inline documentation in files clarifies complex functionality. |
-| 🔌 | **Integrations**  | Key integrations include Docker for deployment, LangChain libraries, Together API, and OpenAI's LLM models. |
+| 🔌 | **Integrations**  | Key integrations include Docker for deployment, LangChain libraries, TogetherAI's LLM models. |
 | 🧩 | **Modularity**    | The Edulance project is designed as a modular system, with distinct agents (lesson_generator, lesson_planner, quiz_agent, etc.) responsible for specific tasks in the document processing and generation pipeline. This leads to enhanced code reusability and maintainability.|
 | 🧪 | **Testing**       | The application incorporates tests using pytest for functionality testing and Docker tests for container deployment checking. Coverage reports provide assurance that tested portions have good code coverage. |
-| ⚡️  | **Performance**   | Edulance boasts impressive performance as it efficiently processes user-uploaded documents to generate lessons or quizzes in near real-time using parallel processing techniques and optimized algorithms like Groq for data queries and analysis.|
-| 🛡️ | **Security**      | The project ensures secure communication with external APIs such as Together by following the principles of secure API design, OAuth authentication, and utilizing HTTPS encryption for sensitive information transfers. |
-| 📦 | **Dependencies**  | Main dependencies include FastAPI, Docker, Python 3.10, requirements.txt, LangChain packages (OpenAI, TogetherChain), PikePDF, PyTesseract, and related tools like Groq and ChatGroq.|
+| 📦 | **Dependencies**  | Main dependencies include FastAPI, Docker, Python 3.10, requirements.txt, LangChain package, PikePDF, PyTesseract, and related tools.|
 
 ---
 
@@ -91,10 +88,10 @@ Edulance is an open-source project that utilizes advanced technologies such as O
 | [Dockerfile](https://github.com/bhaswata08/Edulance/blob/master/Dockerfile)             | Sets base Python runtime, installs dependencies from requirements.txt, and copies application code into container for execution, exposing port 7002.                                                                                                                                                                         |
 | [init.py](https://github.com/bhaswata08/Edulance/blob/master/init.py)                   | Sets environment variables for application accessing Together API using OS environment. In Edulance project architecture, this initialization function, located in init.py, enables secure interaction between the app and Togethers platform.                                                                               |
 | [main.py](https://github.com/bhaswata08/Edulance/blob/master/main.py)                   | This FastAPI application accepts user-uploaded text documents, applies optical character recognition (OCR) to them, and then generates lessons and quizzes based on the content using the Lesson Graph model and Quiz Agent. Additionally, it supports generating a lesson plan and a quiz from PDF files.                   |
-| [ocr.txt](https://github.com/bhaswata08/Edulance/blob/master/ocr.txt)                   | A girl, identical in pose to the boy from the given example, is engrossed in reading a book. Describe: Immerse yourself in the world of literature as a girl, just like her bookish companion in the illustration, absorbed in every page.                                                                                   |
-| [requirements.txt](https://github.com/bhaswata08/Edulance/blob/master/requirements.txt) | In this repository, the requirements.txt file specifies essential libraries for Edulance project's functioning. Notably, it includes LangChain and related packages, FastAPI and Uvicorn web frameworks, OCR tools like PikePDF and PyTesseract, and languages models from OpenAI.                                           |
+| [ocr.txt](https://github.com/bhaswata08/Edulance/blob/master/ocr.txt)                   | An example OCR File                                                                                |
+| [requirements.txt](https://github.com/bhaswata08/Edulance/blob/master/requirements.txt) | In this repository, the requirements.txt file specifies essential libraries for Edulance project's functioning. Notably, it includes LangChain and related packages, FastAPI and Uvicorn web frameworks, OCR tools like PikePDF and PyTesseract.                                           |
 | [togetherchain.py](https://github.com/bhaswata08/Edulance/blob/master/togetherchain.py) | Creates a custom Language Model (LLM) named `TogetherLLM` that integrates with the Together chat API using its client. This LLM allows the application to generate responses based on given prompts, utilizing temperature and max tokens settings.                                                                          |
-| [transcript.txt](https://github.com/bhaswata08/Edulance/blob/master/transcript.txt)     | Explore agentic reasoning design patterns in AI systems, enabling agents to collaborate and iteratively refine tasks, such as image generation or planning. These patterns are set to expand the capabilities of AI significantly this year. Embrace patience and fast token generation for more productive AI interactions. |
+| [transcript.txt](https://github.com/bhaswata08/Edulance/blob/master/transcript.txt)     | Example transcript file |
 
 </details>
 
@@ -104,8 +101,8 @@ Edulance is an open-source project that utilizes advanced technologies such as O
 | ---                                                                                                  | ---                                                                                                                                                                                                                                                                                                                                |
 | [lesson_generator.py](https://github.com/bhaswata08/Edulance/blob/master/agents/lesson_generator.py) | Generate a detailed and engaging lesson based on document contents as an expert teacher. Understand documents deeply and explain each concept in detail without creating quizzes or generating lesson plans. User proficiency and expected topics provided. Interacting with language model using ChatGroq to generate the lesson. |
 | [lesson_planner.py](https://github.com/bhaswata08/Edulance/blob/master/agents/lesson_planner.py)     | Our Lesson Planner Agent processes documents, identifying topics and objectives for effective teaching. Using LLM, it constructs lesson structures adhering to specified formats. Key components include document understanding, main topic identification, and structured lesson generation.                                      |
-| [ocr_agent.py](https://github.com/bhaswata08/Edulance/blob/master/agents/ocr_agent.py)               | Transform documents into educational lessons with precision using the OCR agent, residing in `ocr_agent.py`. This script integrates OpenAIs chat model, Together, and Groq to parse OCR text, understand concepts in detail, and generate captivating lessons for optimal learning experiences.                                    |
-| [pdf_agent.py](https://github.com/bhaswata08/Edulance/blob/master/agents/pdf_agent.py)               | The `pdf_agent.py` script acts as an intelligent agent within the Edulance repository, utilizing OpenAI and Langchain technologies to extract valuable lessons and summaries from provided PDF documents.                                                                                                                          |
+| [ocr_agent.py](https://github.com/bhaswata08/Edulance/blob/master/agents/ocr_agent.py)               | Transform documents into educational lessons with precision using the OCR agent, residing in `ocr_agent.py`. This script integrates Together LLM Models to parse OCR text, understand concepts in detail, and generate captivating lessons for optimal learning experiences.                                    |
+| [pdf_agent.py](https://github.com/bhaswata08/Edulance/blob/master/agents/pdf_agent.py)               | The `pdf_agent.py` script acts as an intelligent agent within the Edulance repository, utilizing TogetherAI and Langchain technologies to extract valuable lessons and summaries from provided PDF documents.                                                                                                                          |
 | [quiz_agent.py](https://github.com/bhaswata08/Edulance/blob/master/agents/quiz_agent.py)             | Generate quiz questions and answers based on document analysis, tailored for user proficiency. Utilize an LLM model to create varied, engaging, and assessing quizzes without deviating from specified format. (agents/quiz_agent.py)                                                                                              |
 
 </details>
