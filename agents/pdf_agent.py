@@ -1,7 +1,6 @@
 """PDF Agent"""
 from typing import List
 
-from langchain_openai.chat_models import ChatOpenAI
 from langchain.prompts import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
