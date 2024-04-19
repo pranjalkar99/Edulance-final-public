@@ -10,3 +10,4 @@ unstructured-inference
 pikepdf
 pytesseract
 python-dotenv
+together
