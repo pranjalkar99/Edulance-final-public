@@ -1,10 +1,7 @@
 langgraph
 langchain
-langchain-groq
 fastapi
 uvicorn
-langchain-openai
-langchain-together
 langsmith
 unstructured-inference
 pikepdf
