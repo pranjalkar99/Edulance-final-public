@@ -50,7 +50,6 @@ Edulance is an open-source project that utilizes advanced technologies such as O
 | 📄 | **Documentation** | Comprehensive documentation exists for each file and agent. The `README.md` provides a high-level overview and installation instructions, while inline documentation in files clarifies complex functionality. |
 | 🔌 | **Integrations**  | Key integrations include Docker for deployment, LangChain libraries, TogetherAI's LLM models. |
 | 🧩 | **Modularity**    | The Edulance project is designed as a modular system, with distinct agents (lesson_generator, lesson_planner, quiz_agent, etc.) responsible for specific tasks in the document processing and generation pipeline. This leads to enhanced code reusability and maintainability.|
-| 🧪 | **Testing**       | The application incorporates tests using pytest for functionality testing and Docker tests for container deployment checking. Coverage reports provide assurance that tested portions have good code coverage. |
 | 📦 | **Dependencies**  | Main dependencies include FastAPI, Docker, Python 3.10, requirements.txt, LangChain package, PikePDF, PyTesseract, and related tools.|
 
 ---
@@ -152,12 +151,6 @@ Edulance is an open-source project that utilizes advanced technologies such as O
 > $ python main.py
 > ```
 
-###  Tests
-
-> Run the test suite using the command below:
-> ```console
-> $ pytest
-> ```
 
 ---
 
