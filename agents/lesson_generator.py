@@ -6,7 +6,6 @@ from langchain.prompts import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_groq import ChatGroq
 from togetherchain import TogetherLLM
 from dotenv import load_dotenv
 
